@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@electron/remote':
+        specifier: ^2.1.2
+        version: 2.1.2(electron@34.0.1)
       '@element-plus/icons-vue':
         specifier: ^2.3.1
         version: 2.3.1(vue@3.5.13(typescript@5.7.3))
@@ -97,6 +100,11 @@ packages:
     resolution: {integrity: sha512-k9ZzUQtamSoweGQDV2jILiRIHUu7lYlJ3c6IEmjv1hC17rclE+eb9U+f6UFlOOETo0JzY1HNlXy4YOlCvl+Lww==}
     engines: {node: '>=12.0.0'}
     hasBin: true
+
+  '@electron/remote@2.1.2':
+    resolution: {integrity: sha512-EPwNx+nhdrTBxyCqXt/pftoQg/ybtWDW3DUWHafejvnB1ZGGfMpv6e15D8KeempocjXe78T7WreyGGb3mlZxdA==}
+    peerDependencies:
+      electron: '>= 13.0.0'
 
   '@electron/universal@1.5.1':
     resolution: {integrity: sha512-kbgXxyEauPJiQQUNG2VgUeyfQNFk6hBF11ISN2PNI6agUgPl55pv4eQmaqHzTAzchBvqZ2tQuRVaPStGf0mxGw==}
@@ -1628,6 +1636,10 @@ snapshots:
       plist: 3.1.0
     transitivePeerDependencies:
       - supports-color
+
+  '@electron/remote@2.1.2(electron@34.0.1)':
+    dependencies:
+      electron: 34.0.1
 
   '@electron/universal@1.5.1':
     dependencies:

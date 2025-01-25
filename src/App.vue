@@ -5,6 +5,7 @@ import { QiniuUploadManager } from './utils/QiniuUploadManager'
 import { VideoProcessor } from './utils/VideoProcessor'
 import { ApiService } from './utils/ApiService'
 import { v4 as uuidv4 } from 'uuid'
+import LicenseActivation from './components/LicenseActivation.vue'
 
 // 表单数据
 const form = ref({
@@ -251,6 +252,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="app-container">
+    <LicenseActivation />
     <!-- 左侧参数输入区 -->
     <div class="input-section">
       <div class="input-card">
